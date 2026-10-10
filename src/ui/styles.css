@@ -934,3 +934,369 @@ button.btn.big { padding: .75rem 1.2rem; font-size: 1rem; font-weight: 600; }
   body { background: #fff; color: #111; }
   .print-all > section { display: block !important; page-break-after: always; }
 }
+
+/* ============================================================
+   Welcome page — Split layout with hero background + form card
+   ============================================================ */
+.welcome-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+:root[data-theme="dark"] .welcome-header {
+  background: rgba(23, 29, 34, 0.95);
+}
+
+.welcome-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.welcome-back-btn:hover {
+  background: var(--surface-hover);
+  border-color: var(--line-strong);
+}
+
+.welcome-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.welcome-logo {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--brand);
+  color: var(--on-brand);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.welcome-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.welcome-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  margin-top: 60px; /* header height */
+}
+
+.welcome-hero {
+  position: relative;
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.15), rgba(169, 145, 115, 0.1)),
+              url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem;
+}
+
+.welcome-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1) 50%, transparent);
+}
+
+.welcome-hero-overlay {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 540px;
+}
+
+.welcome-eyebrow {
+  display: inline-block;
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-title-highlight {
+  display: block;
+}
+
+.welcome-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.92;
+  margin: 0 0 2rem;
+  max-width: 44ch;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-features {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.welcome-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  padding-right: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.welcome-feature:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.welcome-feature-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.3));
+}
+
+.welcome-feature strong {
+  display: block;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 0.82rem;
+}
+
+.welcome-feature div {
+  font-weight: 500;
+}
+
+/* Right side: Form */
+.welcome-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg);
+  overflow-y: auto;
+}
+
+.welcome-form-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 2rem 2rem 1.75rem;
+  box-shadow: 0 8px 40px rgba(23, 43, 58, 0.1);
+  border: 1px solid var(--line);
+}
+
+.welcome-form-title {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.welcome-form-subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+.welcome-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.welcome-input,
+.welcome-select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--field-bg);
+  color: var(--ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.welcome-input:focus,
+.welcome-select:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-soft);
+}
+
+.welcome-input::placeholder {
+  color: var(--placeholder);
+}
+
+.welcome-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235B6875' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.welcome-continue-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-brand);
+  background: var(--brand);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.welcome-continue-btn:hover {
+  background: var(--brand-hover);
+}
+
+.welcome-continue-btn:active {
+  background: var(--brand-strong);
+  transform: scale(0.98);
+}
+
+.welcome-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.welcome-continue-btn:hover .welcome-arrow {
+  transform: translateX(3px);
+}
+
+.welcome-privacy {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 1rem 0 0;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+  .welcome-split {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  
+  .welcome-hero {
+    min-height: 50vh;
+    padding: 1.5rem;
+  }
+  
+  .welcome-form-container {
+    padding: 1.5rem;
+  }
+  
+  .welcome-features {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .welcome-feature {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .welcome-header {
+    padding: 0.6rem 1rem;
+  }
+  
+  .welcome-brand {
+    font-size: 1rem;
+  }
+  
+  .welcome-logo {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .welcome-hero {
+    min-height: 40vh;
+    padding: 1.25rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.92rem;
+  }
+  
+  .welcome-form-card {
+    padding: 1.5rem;
+  }
+  
+  .welcome-back-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+  }
+}

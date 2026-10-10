@@ -108,15 +108,13 @@ export default function App() {
 
   if (stage === "welcome")
     return (
-      <>
-        <div className="app">
-          <div className="row no-print" style={{ justifyContent: "space-between", marginBottom: ".5rem" }}>
-            <button type="button" className="btn" onClick={() => setStage("landing")}>← Back</button>
-            {themeBtn}
-          </div>
-          <Welcome h={h} set={setH} onNext={() => setStage("setup")} onSample={openSample} />
-        </div>
-      </>
+      <Welcome 
+        h={h} 
+        set={setH} 
+        onNext={() => setStage("setup")} 
+        onBack={() => setStage("landing")}
+        themeBtn={themeBtn}
+      />
     );
 
   if (stage === "setup")
