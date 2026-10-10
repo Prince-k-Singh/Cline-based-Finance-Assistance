@@ -40,7 +40,7 @@ export function detectReplyLanguage(q: string): string {
 
 const ALLOWED_LANGS = ["English", "Hindi", "Bengali", "Assamese", "Tamil", "Telugu", "Marathi", "Gujarati", "Kannada"];
 
-export async function askParivar(cfg: LlmConfig, household: Household, history: ChatTurn[], question: string, language?: string) {
+export async function askProspera(cfg: LlmConfig, household: Household, history: ChatTurn[], question: string, language?: string) {
   const log: ToolLogEntry[] = [];
   const agent = makeAgent(cfg, { systemPrompt: ADVISOR_SYSTEM_PROMPT, tools: createFinanceTools(household, log), maxIterations: 8 });
   // The agent is stateless per request; previous turns are passed as context text.

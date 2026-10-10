@@ -1,10 +1,10 @@
 /**
- * Parivar Plan finance engine as an MCP server (stdio, JSON-RPC 2.0).
+ * Prospera finance engine as an MCP server (stdio, JSON-RPC 2.0).
  * Lets Cline (or any MCP client) call the same deterministic tools the
  * in-app advisor uses. No extra dependencies.
  *
  * Add to Cline's MCP settings:
- *   "parivar-plan": { "command": "npx", "args": ["tsx", "server/mcp.ts"], "cwd": "<path-to>/parivar-plan" }
+ *   "prospera": { "command": "npx", "args": ["tsx", "server/mcp.ts"], "cwd": "<path-to>/prospera" }
  *
  * Every tool accepts an optional "household" object; if omitted the sample family is used.
  */
@@ -41,7 +41,7 @@ const send = (msg: unknown) => process.stdout.write(JSON.stringify(msg) + "\n");
 async function handle(req: { id?: number | string; method: string; params?: Record<string, unknown> }) {
   const { id, method, params } = req;
   if (method === "initialize")
-    return send({ jsonrpc: "2.0", id, result: { protocolVersion: "2024-11-05", capabilities: { tools: {} }, serverInfo: { name: "parivar-plan", version: "1.0.0" } } });
+    return send({ jsonrpc: "2.0", id, result: { protocolVersion: "2024-11-05", capabilities: { tools: {} }, serverInfo: { name: "prospera", version: "1.0.0" } } });
   if (method === "notifications/initialized" || id === undefined) return;
   if (method === "ping") return send({ jsonrpc: "2.0", id, result: {} });
   if (method === "tools/list")

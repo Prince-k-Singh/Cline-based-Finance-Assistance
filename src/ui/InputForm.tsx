@@ -10,7 +10,7 @@ const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? "" : "s"}`;
 
 export default function InputForm({ h, set }: Props) {
   const up = <K extends keyof Household>(k: K, v: Household[K]) => set({ ...h, [k]: v });
-  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["family"], "parivar-plan:open:form");
+  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["family"], "prospera:open:form");
 
   const expTotal = EXPENSE_CATEGORIES.reduce((a, c) => a + (h.expenses[c] || 0), 0);
   const holdTotal = HOLDING_TYPES.reduce((a, t) => a + (h.holdings[t] || 0), 0);

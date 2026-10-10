@@ -10,7 +10,7 @@ import type { MarketSnapshot, PricePoint, Series } from "../src/engine";
  */
 const CACHE = join(process.cwd(), "data", "market-cache.json");
 const TTL_MS = 6 * 60 * 60 * 1000;
-const UA = { "User-Agent": "Mozilla/5.0 (ParivarPlan; educational)" };
+const UA = { "User-Agent": "Mozilla/5.0 (Prospera; educational)" };
 
 async function getJson(url: string, timeoutMs = 15000): Promise<unknown> {
   const ctl = new AbortController();

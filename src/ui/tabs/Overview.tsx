@@ -34,7 +34,7 @@ export default function Overview({ plan, income }: { plan: Plan; income: number 
       ? `Overspending by ${lakh(-budget.savingsToday)}/mo`
       : `Saving ${lakh(budget.savingsToday)}/mo today`;
   const efPct = Math.min(100, Math.round((emergency.existing / Math.max(1, emergency.target)) * 100));
-  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["score", "surplus"], "parivar-plan:open:overview");
+  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["score", "surplus"], "prospera:open:overview");
 
   // Colour is keyed to waterfall position so the bar and the numbered list match.
   const allocData = waterfall.map((w, i) => ({ name: w.bucket, value: w.amount, color: ALLOC_COLORS[i % ALLOC_COLORS.length] }));

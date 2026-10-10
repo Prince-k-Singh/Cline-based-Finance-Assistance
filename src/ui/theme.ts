@@ -1,7 +1,7 @@
 /** Dark/light theme handling. Theme is a user choice stored in localStorage;
  *  first visit falls back to the OS preference. */
 export type Theme = "dark" | "light";
-const KEY = "parivar-plan:theme:v1";
+const KEY = "prospera:theme:v1";
 
 export function loadTheme(): Theme {
   try {

@@ -1,9 +1,9 @@
 {
-  "name": "parivar-plan",
+  "name": "prospera",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "AI money planner for the Indian middle-class family. Deterministic finance engine + Cline SDK advisor agent.",
+  "description": "Prospera - AI-powered financial planning assistant for Indian middle-class families. Deterministic finance engine + Cline SDK advisor agent.",
   "scripts": {
     "dev": "concurrently -n web,api -c cyan,magenta \"vite\" \"tsx watch server/index.ts\"",
     "dev:web": "vite",

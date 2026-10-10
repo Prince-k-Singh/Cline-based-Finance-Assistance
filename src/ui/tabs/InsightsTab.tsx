@@ -67,7 +67,7 @@ export default function InsightsTab({ h, aiOn }: { h: Household; aiOn: boolean }
   const [brief, setBrief] = useState<{ text: string | null; tools: string[]; error?: string } | null>(null);
   const [briefing, setBriefing] = useState(false);
   const [lang, setLang] = useState("English");
-  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["impact"], "parivar-plan:open:insights");
+  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["impact"], "prospera:open:insights");
   const impactRef = useRef<HTMLDivElement>(null);
 
   const refreshAll = () => { void news.reload(true); void mkt.reload(true); };
@@ -133,7 +133,7 @@ export default function InsightsTab({ h, aiOn }: { h: Household; aiOn: boolean }
       {waking && <div className="li-wake" role="status">Connecting to the Prospera server… news and prices will appear in a moment.</div>}
       {news.err && !news.data && (
         <div className="flag">
-          Couldn't load the news ({news.err}). The page needs the local API server: run <code>npm run dev</code> (not just <code>vite</code>), wait for "Parivar Plan API on http://localhost:8787", then press Refresh.
+          Couldn't load the news ({news.err}). The page needs the local API server: run <code>npm run dev</code> (not just <code>vite</code>), wait for "Prospera API on http://localhost:8787", then press Refresh.
         </div>
       )}
 

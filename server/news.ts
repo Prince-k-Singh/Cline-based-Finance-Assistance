@@ -32,7 +32,7 @@ const TICKER: { symbol: string; label: string; short: string; unit?: string }[] 
 
 const CACHE = join(process.cwd(), "data", "news-cache.json");
 const TTL_MS = 15 * 60 * 1000;
-const UA = { "User-Agent": "Mozilla/5.0 (ParivarPlan; educational)" };
+const UA = { "User-Agent": "Mozilla/5.0 (Prospera; educational)" };
 
 async function get(url: string, timeoutMs = 12000): Promise<Response> {
   const ctl = new AbortController();

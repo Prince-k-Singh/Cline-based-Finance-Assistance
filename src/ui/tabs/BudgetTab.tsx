@@ -66,7 +66,7 @@ export default function BudgetTab({ plan }: { plan: Plan }) {
   const b = plan.budget;
   const [view, setView] = useState<View>("today");
   const [filter, setFilter] = useState<Kind | "all">("all");
-  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["spend", "savings"], "parivar-plan:open:budget");
+  const { sec, allOpen, toggleAll } = useSections(SECTIONS, ["spend", "savings"], "prospera:open:budget");
 
   const income = b.savingsToday + b.totals.today; // engine: savingsToday = income − today's spending
   const viewTotal = b.totals[view];

@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { analyseMarket, buildPlan, forecastMonth, type Expenses, type Household } from "../src/engine";
-import { askParivar } from "./advisor";
+import { askProspera } from "./advisor";
 import { listCheckIns, runCheckIn, startMonthlyScheduler } from "./checkin";
 import { clearHistory, loadHistory, saveMonth } from "./history";
 import { getLlmConfig } from "./llm";
@@ -47,7 +47,7 @@ app.post("/api/chat", async (req, res) => {
   const question = String(req.body?.question ?? "").slice(0, 2000);
   if (!parsed.success || !question) return res.status(400).json({ error: "household and question are required" });
   try {
-    const out = await askParivar(cfg, parsed.data as unknown as Household, Array.isArray(req.body.history) ? req.body.history : [], question, typeof req.body.language === "string" ? req.body.language : undefined);
+    const out = await askProspera(cfg, parsed.data as unknown as Household, Array.isArray(req.body.history) ? req.body.history : [], question, typeof req.body.language === "string" ? req.body.language : undefined);
     console.log(`[chat] tools used: ${out.toolCalls.map((t) => t.tool).join(", ") || "none"}`);
     res.json(out);
   } catch (e) {
@@ -153,5 +153,5 @@ startMonthlyScheduler(() => (lastJob ? { cfg: getLlmConfig(), ...lastJob } : nul
 const port = Number(process.env.PORT) || 8787;
 app.listen(port, () => {
   const cfg = getLlmConfig();
-  console.log(`Parivar Plan API on http://localhost:${port}  (AI: ${cfg ? `${cfg.providerId}/${cfg.modelId}` : "off – add a key in .env"})`);
+  console.log(`Prospera API on http://localhost:${port}  (AI: ${cfg ? `${cfg.providerId}/${cfg.modelId}` : "off – add a key in .env"})`);
 });

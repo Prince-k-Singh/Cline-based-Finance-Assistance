@@ -1,6 +1,6 @@
 import { SAMPLE_HOUSEHOLD, type Household } from "../engine";
 
-const KEY = "parivar-plan:household:v1";
+const KEY = "prospera:household:v1";
 
 export function loadHousehold(): Household {
   try {
@@ -16,7 +16,7 @@ export function saveHousehold(h: Household) {
   localStorage.setItem(KEY, JSON.stringify(h));
 }
 
-const STAGE_KEY = "parivar-plan:stage:v1";
+const STAGE_KEY = "prospera:stage:v1";
 export type Stage = "landing" | "welcome" | "setup" | "app";
 
 export function loadStage(): Stage {

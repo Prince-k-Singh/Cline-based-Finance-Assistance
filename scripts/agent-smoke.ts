@@ -6,7 +6,7 @@
  */
 import { existsSync, readFileSync } from "node:fs";
 import { SAMPLE_HOUSEHOLD } from "../src/engine";
-import { askParivar } from "../server/advisor";
+import { askProspera } from "../server/advisor";
 import { getLlmConfig } from "../server/llm";
 import { createFinanceTools, type ToolLogEntry } from "../server/tools";
 
@@ -32,7 +32,7 @@ const cfg = getLlmConfig();
 if (!cfg) {
   console.log("No API key configured: skipping live agent call.");
 } else {
-  const out = await askParivar(cfg, SAMPLE_HOUSEHOLD, [], "Can we afford a ₹9 lakh car next year?");
+  const out = await askProspera(cfg, SAMPLE_HOUSEHOLD, [], "Can we afford a ₹9 lakh car next year?");
   console.log("Tools called:", out.toolCalls.map((t) => t.tool));
   console.log("Answer:\n" + out.answer);
 }
