@@ -1,6 +1,26 @@
-# Prospera
+<p align="center">
+  <img src="public/favicon.svg" alt="Prospera Logo" width="120" height="120">
+</p>
 
-**AI-Powered Financial Planning Assistant for Indian Middle-Class Families**
+<h1 align="center">Prospera</h1>
+
+<p align="center">
+  <strong>AI-Powered Financial Planning Assistant for Indian Middle-Class Families</strong>
+</p>
+
+<p align="center">
+  <a href="https://cline-based-finance-assistance.vercel.app/">🌐 Live Demo</a> •
+  <a href="https://drive.google.com/drive/folders/1842CsrOQLWSz_55zIwCku2sAxuvuI_eu?usp=sharing">📹 Presentation & Demo Video</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-22+-339933?logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Cline_SDK-Powered-purple" alt="Cline SDK">
+</p>
+
+---
 
 Prospera is a comprehensive personal finance management tool designed specifically for Indian households. It combines a deterministic financial calculation engine with AI-powered advisory capabilities using the Cline SDK, delivering transparent, accurate, and culturally relevant financial guidance.
 
