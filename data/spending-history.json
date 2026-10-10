@@ -1,0 +1,71 @@
+[
+  {
+    "month": "2026-07",
+    "expenses": {
+      "housing": 27300,
+      "food": 13500,
+      "utilities": 3600,
+      "transport": 4500,
+      "education": 7200,
+      "healthcare": 1900,
+      "insurance": 3600,
+      "emis": 12600,
+      "phoneInternet": 1650,
+      "clothingHousehold": 4200,
+      "domesticHelp": 4200,
+      "eatingOut": 5400,
+      "entertainment": 2750,
+      "shopping": 5500,
+      "subscriptions": 1100,
+      "travel": 3000,
+      "festivals": 1800,
+      "miscellaneous": 2200
+    }
+  },
+  {
+    "month": "2026-08",
+    "expenses": {
+      "housing": 24700,
+      "food": 15750,
+      "utilities": 4200,
+      "transport": 5250,
+      "education": 8400,
+      "healthcare": 2200,
+      "insurance": 4200,
+      "emis": 14700,
+      "phoneInternet": 1500,
+      "clothingHousehold": 3800,
+      "domesticHelp": 3800,
+      "eatingOut": 6300,
+      "entertainment": 2500,
+      "shopping": 5000,
+      "subscriptions": 1000,
+      "travel": 2700,
+      "festivals": 2100,
+      "miscellaneous": 2000
+    }
+  },
+  {
+    "month": "2026-09",
+    "expenses": {
+      "housing": 28600,
+      "food": 14250,
+      "utilities": 3800,
+      "transport": 4750,
+      "education": 7600,
+      "healthcare": 2000,
+      "insurance": 3800,
+      "emis": 13300,
+      "phoneInternet": 1350,
+      "clothingHousehold": 4400,
+      "domesticHelp": 4400,
+      "eatingOut": 5700,
+      "entertainment": 2250,
+      "shopping": 4500,
+      "subscriptions": 900,
+      "travel": 3150,
+      "festivals": 1900,
+      "miscellaneous": 1800
+    }
+  }
+]

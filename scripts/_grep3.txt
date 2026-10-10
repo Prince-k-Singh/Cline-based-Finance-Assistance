@@ -1,0 +1,63 @@
+
+src\ui\tabs\AskTab.tsx:97:            <div key={i} className={`msg ${m.role}`} style={m.error ? { borderColor: "var(--bad)", color: "var(--bad)" } : undefined}>
+src\ui\tabs\AskTab.tsx:111:            <button type="button" className="btn" onClick={toggleMic} title="Speak your question" style={listening ? { background: "var(--bad)", color: "#fff" } : undefined}>
+src\ui\tabs\BudgetTab.tsx:8:const CAT_COLORS = ["#0b7285", "#2b8a3e", "#e87916", "#c2255c", "#5f3dc4", "#f59f00", "#1971c2", "#0ca678", "#d6336c", "#7048e8", "#a07c00", "#4c6ef5"];
+src\ui\tabs\BudgetTab.tsx:9:const BUFFER_COLOR = "#6c7a89";
+src\ui\tabs\BudgetTab.tsx:20:  { id: "fixed", label: "Fixed", plural: "Fixed commitments", hint: "Fees, medicines, insurance, EMIs", color: "var(--brand-2)" },
+src\ui\tabs\BudgetTab.tsx:21:  { id: "need", label: "Need", plural: "Flexible needs", hint: "Rent, groceries, bills, transport", color: "var(--good)" },
+src\ui\tabs\BudgetTab.tsx:22:  { id: "want", label: "Want", plural: "Wants", hint: "Dining out, shopping, travel, OTT", color: "var(--brand)" },
+src\ui\tabs\BudgetTab.tsx:78:  const colorOf = (label: string) => CAT_COLORS[Math.max(0, rank.indexOf(label)) % CAT_COLORS.length];
+src\ui\tabs\BudgetTab.tsx:84:    spendingData.push({ name: "Safety buffer (5%)", value: b.contingency, color: BUFFER_COLOR });
+src\ui\tabs\BudgetTab.tsx:137:                <div className="bt-kind" key={k.id} style={{ "--k": k.color } as CSSProperties}>
+src\ui\tabs\BudgetTab.tsx:184:                  <li key={s.category} style={{ "--i": i, "--k": k.color } as CSSProperties}>
+src\ui\tabs\CheckInTab.tsx:68:                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+src\ui\tabs\CheckInTab.tsx:69:                  <XAxis dataKey="month" stroke="var(--muted)" fontSize={12} tickLine={false} />
+src\ui\tabs\CheckInTab.tsx:70:                  <YAxis tickFormatter={(v) => lakh(v)} stroke="var(--muted)" fontSize={12} tickLine={false} axisLine={false} />
+src\ui\tabs\CheckInTab.tsx:76:                  <Bar dataKey="Actual" fill="var(--warn)" radius={[4, 4, 0, 0]} animationDuration={1000} />
+src\ui\tabs\CheckInTab.tsx:77:                  <Bar dataKey="Planned" fill="var(--brand-2)" radius={[4, 4, 0, 0]} animationDuration={1000} />
+src\ui\tabs\EmergencyTab.tsx:41:          <Progress pct={pct} color={pct >= 100 ? "var(--good)" : "var(--warn)"} />
+src\ui\tabs\EmergencyTab.tsx:49:                      <stop offset="5%" stopColor="var(--good)" stopOpacity={0.3}/>
+src\ui\tabs\EmergencyTab.tsx:50:                      <stop offset="95%" stopColor="var(--good)" stopOpacity={0}/>
+src\ui\tabs\EmergencyTab.tsx:53:                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+src\ui\tabs\EmergencyTab.tsx:54:                  <XAxis dataKey="month" tickFormatter={(m) => `M${m}`} stroke="var(--muted)" fontSize={12} tickLine={false} />
+src\ui\tabs\EmergencyTab.tsx:61:                  <ReferenceLine y={e.target} stroke="var(--muted)" strokeDasharray="3 3" label={{ position: 'top', value: 'Target', fill: 'var(--muted)', fontSize: 12 }} />
+src\ui\tabs\EmergencyTab.tsx:62:                  <Area type="monotone" dataKey="Amount" stroke="var(--good)" strokeWidth={2} fillOpacity={1} fill="url(#colorAmt)" animationDuration={1000} />
+src\ui\tabs\InvestTab.tsx:6:const CAT_COLORS = ["#0b7285", "#2b8a3e", "#e87916", "#c2255c", "#5f3dc4", "#f59f00", "#1971c2", "#868e96", "#0ca678", "#d6336c"];
+src\ui\tabs\InvestTab.tsx:14:  const colorOf = (i: number) => CAT_COLORS[i % CAT_COLORS.length];
+src\ui\tabs\InvestTab.tsx:52:                    <stop offset="5%" stopColor="var(--muted)" stopOpacity={0.3}/>
+src\ui\tabs\InvestTab.tsx:53:                    <stop offset="95%" stopColor="var(--muted)" stopOpacity={0}/>
+src\ui\tabs\InvestTab.tsx:56:                    <stop offset="5%" stopColor="var(--good)" stopOpacity={0.3}/>
+src\ui\tabs\InvestTab.tsx:57:                    <stop offset="95%" stopColor="var(--good)" stopOpacity={0}/>
+src\ui\tabs\InvestTab.tsx:60:                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+src\ui\tabs\InvestTab.tsx:61:                <XAxis dataKey="year" tickFormatter={(y) => `Year ${y}`} stroke="var(--muted)" fontSize={12} tickLine={false} />
+src\ui\tabs\InvestTab.tsx:69:                <Area type="monotone" dataKey="Current" stroke="var(--muted)" fillOpacity={1} fill="url(#colorCur)" animationDuration={1000} />
+src\ui\tabs\InvestTab.tsx:70:                <Area type="monotone" dataKey="Suggested" stroke="var(--good)" strokeWidth={2} fillOpacity={1} fill="url(#colorSug)" animationDuration={1000} />
+src\ui\tabs\LifestyleTab.tsx:28:            <div style={{ marginTop: ".75rem" }}><Progress pct={l.fundedPct} color={l.fundedPct >= 100 ? "var(--good)" : "var(--warn)"} /></div>
+src\ui\tabs\Overview.tsx:7:const ALLOC_COLORS = ["#0b7285", "#2b8a3e", "#b45309", "#e87916"];
+src\ui\tabs\Overview.tsx:18:        <circle cx="60" cy="60" r={r} className="ring-fg" stroke={tone}
+src\ui\tabs\Overview.tsx:19:          strokeDasharray={c} strokeDashoffset={c * (1 - v / 100)} style={{ ["--c" as string]: c }} />
+src\ui\tabs\Overview.tsx:28:  const tone = score.total >= 70 ? "var(--good)" : score.total >= 45 ? "var(--warn)" : "var(--bad)";
+src\ui\tabs\Overview.tsx:40:  const allocData = waterfall.map((w, i) => ({ name: w.bucket, value: w.amount, color: ALLOC_COLORS[i % ALLOC_COLORS.length] }));
+src\ui\tabs\Overview.tsx:97:                          <span className="n" aria-hidden="true" style={{ background: ALLOC_COLORS[i % ALLOC_COLORS.length], color: "#fff" }}>{i + 1}</span>
+src\ui\tabs\Overview.tsx:128:            <Progress pct={efPct} color="var(--good)" />
+src\ui\tabs\Overview.tsx:139:            <Progress pct={plan.lifestyle.fundedPct} color="var(--brand)" />
+src\ui\tabs\SpendingPredictor.tsx:74:                  <td style={{ width: 120 }}><Progress pct={c.budget ? (c.projected / c.budget) * 100 : 100} color={c.status === "over" ? "var(--bad)" : c.status === "watch" ? "var(--warn)" : "var(--good)"} /></td>
+src\ui\Accordion.tsx:54:            <path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+src\ui\App.tsx:39:  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+src\ui\App.tsx:48:  <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+src\ui\Breakdown.tsx:8:const OTHER_COLOR = "#8a94a8";
+src\ui\Breakdown.tsx:28:      tail: folds && i >= TOP, color: folds && i >= TOP ? OTHER_COLOR : d.color,
+src\ui\Breakdown.tsx:39:    key: OTHER, name: `Other (${tail.length} items)`, color: OTHER_COLOR, tail: true,
+src\ui\Breakdown.tsx:69:          <span key={r.key} className={lit(r) ? "" : "dim"} style={{ flexGrow: r.value, background: r.color }}
+src\ui\Breakdown.tsx:82:                <i style={{ background: r.color }} />{r.name}<b>{r.pct.toFixed(0)}%</b>
+src\ui\Breakdown.tsx:94:                <i className="sw" style={{ background: r.color }} />
+src\ui\Breakdown.tsx:99:                  <em style={{ transform: `scaleX(${r.value / listMax})`, background: r.color }} />
+src\ui\Breakdown.tsx:134:          <span key={r.name} className={cur === null || cur === r.name ? "" : "dim"} style={{ flexGrow: r[key], background: r.color }}
+src\ui\Breakdown.tsx:160:                <span className="nm"><i className="sw" style={{ background: r.color }} />{r.name}</span>
+src\ui\Breakdown.tsx:167:                  <span className="trk"><em style={{ transform: `scaleX(${r.b / max})`, background: r.color }} /></span>
+src\ui\components.tsx:53:            <span style={{ width: `${(r.value / max) * 100}%`, background: r.color ?? "var(--brand-2)" }} />
+src\ui\components.tsx:71:          <span key={p.label} title={`${p.label}: ${lakh(p.value)}`} style={{ width: `${(p.value / total) * 100}%`, background: PALETTE[parts.indexOf(p) % PALETTE.length] }} />
+src\ui\components.tsx:77:            <i style={{ background: PALETTE[parts.indexOf(p) % PALETTE.length] }} />
+
+
+

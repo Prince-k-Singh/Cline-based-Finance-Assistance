@@ -1,0 +1,55 @@
+﻿ui\onboarding\Welcome.tsx:65: {touched && !nameOk && <span className="bad">Please enter your name</span>}
+ui\onboarding\Welcome.tsx:71: {touched && !ageOk && <span className="bad">Age must be 18–80</span>}
+ui\tabs\AskTab.tsx:97: <div key={i} className={`msg ${m.role}`} style={m.error ? { borderColor: "var(--bad)", color: "var(--bad)" } : undefined}>
+ui\tabs\AskTab.tsx:111: <button type="button" className="btn" onClick={toggleMic} title="Speak your question" style={listening ? { background: "var(--bad)", color: "#fff" } : undefined}>
+ui\tabs\BudgetTab.tsx:19: const KINDS: { id: Kind; label: string; plural: string; hint: string; color: string }[] = [
+ui\tabs\BudgetTab.tsx:20: { id: "fixed", label: "Fixed", plural: "Fixed commitments", hint: "Fees, medicines, insurance, EMIs", color: "var(--brand-2)" },
+ui\tabs\BudgetTab.tsx:21: { id: "need", label: "Need", plural: "Flexible needs", hint: "Rent, groceries, bills, transport", color: "var(--good)" },
+ui\tabs\BudgetTab.tsx:22: { id: "want", label: "Want", plural: "Wants", hint: "Dining out, shopping, travel, OTT", color: "var(--brand)" },
+ui\tabs\BudgetTab.tsx:82: .map((l) => ({ name: l.label, value: l[view], color: colorOf(l.label) }));
+ui\tabs\BudgetTab.tsx:84: spendingData.push({ name: "Safety buffer (5%)", value: b.contingency, color: BUFFER_COLOR });
+ui\tabs\BudgetTab.tsx:190: <strong className="good">−{lakh(s.save)}</strong><span className="muted">/mo · {cut}% less</span>
+ui\tabs\CheckInTab.tsx:6: import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+ui\tabs\CheckInTab.tsx:68: <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+ui\tabs\CheckInTab.tsx:69: <XAxis dataKey="month" stroke="var(--muted)" fontSize={12} tickLine={false} />
+ui\tabs\CheckInTab.tsx:70: <YAxis tickFormatter={(v) => lakh(v)} stroke="var(--muted)" fontSize={12} tickLine={false} axisLine={false} />
+ui\tabs\CheckInTab.tsx:73: contentStyle={{ backgroundColor: 'var(--card-solid)', borderColor: 'var(--line)', borderRadius: '8px' }}
+ui\tabs\CheckInTab.tsx:76: <Bar dataKey="Actual" fill="var(--warn)" radius={[4, 4, 0, 0]} animationDuration={1000} />
+ui\tabs\CheckInTab.tsx:77: <Bar dataKey="Planned" fill="var(--brand-2)" radius={[4, 4, 0, 0]} animationDuration={1000} />
+ui\tabs\EmergencyTab.tsx:3: import { AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, ReferenceLine } from "recharts";
+ui\tabs\EmergencyTab.tsx:41: <Progress pct={pct} color={pct >= 100 ? "var(--good)" : "var(--warn)"} />
+ui\tabs\EmergencyTab.tsx:49: <stop offset="5%" stopColor="var(--good)" stopOpacity={0.3}/>
+ui\tabs\EmergencyTab.tsx:50: <stop offset="95%" stopColor="var(--good)" stopOpacity={0}/>
+ui\tabs\EmergencyTab.tsx:53: <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+ui\tabs\EmergencyTab.tsx:54: <XAxis dataKey="month" tickFormatter={(m) => `M${m}`} stroke="var(--muted)" fontSize={12} tickLine={false} />
+ui\tabs\EmergencyTab.tsx:59: contentStyle={{ backgroundColor: 'var(--card-solid)', borderColor: 'var(--line)', borderRadius: '8px' }}
+ui\tabs\EmergencyTab.tsx:61: <ReferenceLine y={e.target} stroke="var(--muted)" strokeDasharray="3 3" label={{ position: 'top', value: 'Target', fill: 'var(--muted)', fontSize: 12 }} />
+ui\tabs\EmergencyTab.tsx:62: <Area type="monotone" dataKey="Amount" stroke="var(--good)" strokeWidth={2} fillOpacity={1} fill="url(#colorAmt)" animationDuration={1000} />
+ui\tabs\InvestTab.tsx:3: import { Tooltip, ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Legend } from "recharts";
+ui\tabs\InvestTab.tsx:15: const mixItems = HOLDING_TYPES.map((t, i) => ({ name: ASSETS[t].label, color: colorOf(i), a: p.current[t], b: p.suggested[t] }));
+ui\tabs\InvestTab.tsx:52: <stop offset="5%" stopColor="var(--muted)" stopOpacity={0.3}/>
+ui\tabs\InvestTab.tsx:53: <stop offset="95%" stopColor="var(--muted)" stopOpacity={0}/>
+ui\tabs\InvestTab.tsx:56: <stop offset="5%" stopColor="var(--good)" stopOpacity={0.3}/>
+ui\tabs\InvestTab.tsx:57: <stop offset="95%" stopColor="var(--good)" stopOpacity={0}/>
+ui\tabs\InvestTab.tsx:60: <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)" />
+ui\tabs\InvestTab.tsx:61: <XAxis dataKey="year" tickFormatter={(y) => `Year ${y}`} stroke="var(--muted)" fontSize={12} tickLine={false} />
+ui\tabs\InvestTab.tsx:66: contentStyle={{ backgroundColor: 'var(--card-solid)', borderColor: 'var(--line)', borderRadius: '8px' }}
+ui\tabs\InvestTab.tsx:69: <Area type="monotone" dataKey="Current" stroke="var(--muted)" fillOpacity={1} fill="url(#colorCur)" animationDuration={1000} />
+ui\tabs\InvestTab.tsx:70: <Area type="monotone" dataKey="Suggested" stroke="var(--good)" strokeWidth={2} fillOpacity={1} fill="url(#colorSug)" animationDuration={1000} />
+ui\tabs\LifestyleTab.tsx:28: <div style={{ marginTop: ".75rem" }}><Progress pct={l.fundedPct} color={l.fundedPct >= 100 ? "var(--good)" : "var(--warn)"} /></div>
+ui\tabs\Overview.tsx:18: <circle cx="60" cy="60" r={r} className="ring-fg" stroke={tone}
+ui\tabs\Overview.tsx:28: const tone = score.total >= 70 ? "var(--good)" : score.total >= 45 ? "var(--warn)" : "var(--bad)";
+ui\tabs\Overview.tsx:40: const allocData = waterfall.map((w, i) => ({ name: w.bucket, value: w.amount, color: ALLOC_COLORS[i % ALLOC_COLORS.length] }));
+ui\tabs\Overview.tsx:55: summary={<><b className="sum-strong" style={{ color: tone }}>{score.total}/100</b>{weakest && weakest.score < weakest.max ? ` · improve ${weakest.name.toLowerCase()}` : ""}</>}>
+ui\tabs\Overview.tsx:97: <span className="n" aria-hidden="true" style={{ background: ALLOC_COLORS[i % ALLOC_COLORS.length], color: "#fff" }}>{i + 1}</span>
+ui\tabs\Overview.tsx:128: <Progress pct={efPct} color="var(--good)" />
+ui\tabs\Overview.tsx:139: <Progress pct={plan.lifestyle.fundedPct} color="var(--brand)" />
+ui\tabs\SpendingPredictor.tsx:74: <td style={{ width: 120 }}><Progress pct={c.budget ? (c.projected / c.budget) * 100 : 100} color={c.status === "over" ? "var(--bad)" : c.status === "watch" ? "var(--warn)" : "var(--good)"} /></td>
+ui\Accordion.tsx:54: <path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+ui\App.tsx:39: <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+ui\App.tsx:48: <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+ui\Breakdown.tsx:4: export type Slice = { name: string; value: number; color: string };
+ui\Breakdown.tsx:28: tail: folds && i >= TOP, color: folds && i >= TOP ? OTHER_COLOR : d.color,
+ui\Breakdown.tsx:39: key: OTHER, name: `Other (${tail.length} items)`, color: OTHER_COLOR, tail: true,
+ui\Breakdown.tsx:118: items: { name: string; color: string; a: number; b: number }[]; aLabel: string; bLabel: string;
+ui\components.tsx:53: <span style={{ width: `${(r.value / max) * 100}%`, background: r.color ?? "var(--brand-2)" }} />

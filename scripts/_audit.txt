@@ -1,0 +1,81 @@
+UNDEFINED VARS: --n, --i, --k
+13: --on-brand: #FFFFFF;
+15: --bg: #F7F7F2;
+16: --card: #FFFFFF;
+17: --card-solid: #FFFFFF;
+18: --input-bg: #F3F4F0;                /* secondary surface, tracks, quiet panels */
+19: --field-bg: #FFFFFF;                /* text inputs and selects */
+31: --bad: #D63C3C;    --bad-soft: #FCEBEC;
+32: --warn: #9A6418;   --warn-soft: #FBF1DC;
+82: --ink: #F1F0EA;
+258: .stat.hero .value { font-size: 2.3rem; background: linear-gradient(90deg, var(--brand), var(--brand-strong)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+304: background: linear-gradient(160deg, #fff3b0 0%, #f5c542 30%, #d4a017 55%, #a87400 80%, #ffe28a 100%);
+308: .dollar-stack { position: relative; filter: drop-shadow(0 18px 40px rgba(212, 160, 23, .35)); }
+312: background: radial-gradient(closest-side, rgba(120, 80, 0, .35), transparent);
+314: @media (prefers-reduced-motion: reduce) { .dollar-float, .dollar-shadow { animation: none; } }
+361: .mc-legend .mc-b { background: linear-gradient(90deg, var(--brand-2), var(--good)); }
+383: .bd-bar, .bd-bar > span, .bd-list li, .bd-list .trk em, .mc-list .trk em { animation: none !important; transition: none !important; }
+408: @media (prefers-reduced-motion: reduce) { .ring-fg { animation: none; } }
+470: .save-bars .bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--good), var(--brand-2)); transform-origin: left; }
+487: background: linear-gradient(135deg, var(--brand), var(--brand-strong)); color: #fff; display: grid; place-items: center; font-weight: 800;
+488: box-shadow: 0 10px 30px rgba(232, 89, 12, 0.2);
+507: .step.current .dot { background: var(--brand); color: #fff; }
+509: .step.done .dot { background: var(--good); color: #fff; }
+599: display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--good), var(--brand-2));
+645: .seg-ind, .bt-kind-bar em, .bt-save-bar em, .bt-range i, .bt-saves li, .bt-table tbody tr { animation: none !important; transition: none !important; }
+660: background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .07), transparent); animation: shimmer 1.4s infinite;
+662: :root[data-theme="light"] .skel::after, :root[data-theme="light"] .skel-lead::after { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .7), transparent); }
+663: @keyframes shimmer { to { transform: translateX(100%); } }
+707: .li-refresh .spin { display: inline-block; animation: spin .9s linear infinite; }
+708: @keyframes spin { to { transform: rotate(360deg); } }
+736: .li-img-ph.t-markets { background: linear-gradient(135deg, #0b7285, #1f3b73); }
+737: .li-img-ph.t-money { background: linear-gradient(135deg, #e87916, #b5446e); }
+738: .li-img-ph.t-economy { background: linear-gradient(135deg, #2b8a3e, #0b7285); }
+750: background: linear-gradient(var(--brand-2), var(--brand-2)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--brand-2), var(--brand-2)) 0 4px / 70% 2px no-repeat, linear-gradient(var(--brand-2), var(--brand-2)) 0 8px / 100
+775: background: linear-gradient(180deg, var(--brand-2-soft), transparent 70%), var(--card); border: 1px solid var(--line);
+814: .li-lead, .li-card, .li-rate, .li-insight, .li-spark .line, .skel::after, .skel-lead::after, .li-live i.on, .li-refresh .spin { animation: none !important; }
+824: background: var(--card); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: var(--shadow);
+828: width: 34px; height: 34px; border-radius: 10px; color: #fff; font-weight: 800; display: grid; place-items: center;
+829: background: linear-gradient(135deg, var(--brand), #f59f00); box-shadow: 0 6px 18px rgba(232, 89, 12, .35);
+840: padding: .35rem .8rem; border-radius: 99px; background: var(--brand-soft); border: 1px solid rgba(240, 140, 58, .25);
+842: .lp-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 0 rgba(240, 140, 58, .6); }
+845: background: linear-gradient(100deg, var(--brand) 10%, #f5b942 50%, var(--brand) 90%); background-size: 200% auto;
+850: .lp-cta { position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(232, 121, 22, .35); }
+853: background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, .35) 50%, transparent 70%);
+860: -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 30px 80px rgba(2, 6, 18, .45);
+867: .lp-dots i:first-child { background: #f2717e; } .lp-dots i:nth-child(2) { background: #f2b33d; } .lp-dots i:nth-child(3) { background: #2fbf8f; }
+881: .lp-bar-a { background: var(--muted); } .lp-bar-b { background: linear-gradient(90deg, var(--brand), #f5b942); } .lp-bar-c { background: var(--good); }
+907: -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+910: .lp-feature.in:hover { transform: translateY(-5px); border-color: rgba(240, 140, 58, .45); box-shadow: 0 18px 40px rgba(232, 121, 22, .14); }
+920: -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+932: margin: 4rem 0 2rem; padding: 3rem 1.5rem; text-align: center; border-radius: 26px; border: 1px solid rgba(240, 140, 58, .3);
+933: background: radial-gradient(ellipse at top, rgba(240, 140, 58, .22), transparent 70%), var(--card);
+965: .lp-preview, .lp-float, .lp-grad, .lp-pulse, .lp-cta::after, .lp-marquee-track, .lp-bar i, .lp-ring-fg { animation: none !important; }
+969: nav.tabs, .no-print, header.top .row, .aurora { display: none !important; }
+970: .card { break-inside: avoid; border-color: #ccc; box-shadow: none; background: #fff; }
+971: body { background: #fff; color: #111; }
+src/ui/Ambient.tsx:5: * Ambient — Parivar Plan's live interactive background.
+src/ui/Ambient.tsx:8: * by fine lines (a calm financial ecosystem). It sits on top of the CSS aurora
+src/ui/Ambient.tsx:9: * gradient (which remains as the no-canvas fallback) and:
+src/ui/Ambient.tsx:39: export default function Ambient({ theme }: Props) {
+src/ui/Ambient.tsx:46: if (!ctx) return; // CSS aurora gradient remains as the fallback
+src/ui/Ambient.tsx:99: ctx.strokeStyle = `rgba(${p.line}, ${alpha.toFixed(3)})`;
+src/ui/Ambient.tsx:132: ctx.fillStyle = `rgba(${p.dots[s.hue]}, ${p.dotAlpha})`;
+src/ui/Ambient.tsx:189: <div className="aurora" aria-hidden="true">
+src/ui/App.tsx:3: import Ambient from "./Ambient";
+src/ui/App.tsx:106: <Ambient theme={theme} />
+src/ui/App.tsx:114: <Ambient theme={theme} />
+src/ui/App.tsx:128: <Ambient theme={theme} />
+src/ui/App.tsx:138: <Ambient theme={theme} />
+src/ui/Breakdown.tsx:8: const OTHER_COLOR = "#8a94a8";
+src/ui/components.tsx:62: export const PALETTE = ["#0b7285", "#e8590c", "#2b8a3e", "#f59f00", "#5f3dc4", "#c2255c", "#1971c2", "#868e96", "#d9480f"];
+src/ui/onboarding/DollarHero.tsx:2: const extrusion = Array.from({ length: 16 }, (_, i) => `${(i + 1) * 0.5}px ${(i + 1) * 0.8}px 0 #7a4f00`).join(", ");
+src/ui/onboarding/DollarHero.tsx:4: export default function DollarHero() {
+src/ui/onboarding/Welcome.tsx:4: const DollarHero = lazy(() => import("./DollarHero"));
+src/ui/onboarding/Welcome.tsx:43: <DollarHero />
+src/ui/tabs/AskTab.tsx:111: <button type="button" className="btn" onClick={toggleMic} title="Speak your question" style={listening ? { background: "var(--bad)", color: "#fff" } : undefined}>
+src/ui/tabs/BudgetTab.tsx:8: const CAT_COLORS = ["#0b7285", "#2b8a3e", "#e87916", "#c2255c", "#5f3dc4", "#f59f00", "#1971c2", "#0ca678", "#d6336c", "#7048e8", "#a07c00", "#4c6ef5"];
+src/ui/tabs/BudgetTab.tsx:9: const BUFFER_COLOR = "#6c7a89";
+src/ui/tabs/InvestTab.tsx:6: const CAT_COLORS = ["#0b7285", "#2b8a3e", "#e87916", "#c2255c", "#5f3dc4", "#f59f00", "#1971c2", "#868e96", "#0ca678", "#d6336c"];
+src/ui/tabs/Overview.tsx:7: const ALLOC_COLORS = ["#0b7285", "#2b8a3e", "#b45309", "#e87916"];
+src/ui/tabs/Overview.tsx:97: <span className="n" aria-hidden="true" style={{ background: ALLOC_COLORS[i % ALLOC_COLORS.length], color: "#fff" }}>{i + 1}</span>
